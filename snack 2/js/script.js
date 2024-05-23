@@ -47,4 +47,13 @@ console.log(nomiTarghe);
 
 //creo un altro array per filtrare tutti gli studenti che hanno un totale di voti superiore a 70
 
+const mediaAlta = listaStudenti.filter((studente) => {
+    if (studente.Grades >= 70){
+        return true;
+    }
+});
+console.log(mediaAlta);
+
+
+
 // creo un altro array di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
