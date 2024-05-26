@@ -88,4 +88,14 @@ console.log(squadreCalcio);
 
 
 
-//destrutturo e creo il nuovo array con solo nomi e falli subiti con lo spread
+//destrutturo e creo un nuovo array con solo nomi e falli subiti 
+
+
+const newSquadraArray = squadreCalcio.map(({nome, falliSubiti}) => {
+    return {nome, falliSubiti};
+});
+
+
+//stampo in console 
+
+console.log(newSquadraArray)
