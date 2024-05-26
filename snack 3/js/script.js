@@ -56,7 +56,18 @@ const biciclette = [
     }
 ];
 
+console.log(biciclette);
+
 //creo un ciclo forEach per verificare il peso di ogni oggetto-bicicletta
+
+let biciLeggera = biciclette[0]; 
+
+biciclette.forEach((bici) => {
+    if ( bici.peso < biciLeggera.peso ){
+        biciLeggera = bici;
+    }
+});
 
 //stampo in console il risultato con il template literal
 
+console.log(`La bicicletta più leggera è ${biciLeggera.nome}, e pesa ${biciLeggera.peso}`);
