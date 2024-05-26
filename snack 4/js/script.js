@@ -77,4 +77,15 @@ function generaRandom(min, max) {
 
 
 //chiamo la funzione per riassegnare i valori di punti fatti e falli subiti 
+
+squadreCalcio.forEach((squadra) => {
+    squadra.puntiFatti = generaRandom(1, 30);
+    squadra.falliSubiti = generaRandom(1, 30);
+});
+
+console.log(squadreCalcio);
+
+
+
+
 //destrutturo e creo il nuovo array con solo nomi e falli subiti con lo spread
